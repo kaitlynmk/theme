@@ -1,33 +1,48 @@
+/* header */
+
+#banner {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, .9);
+  padding: 1.5em;
+  text-align: center;
+}
+
+
 /* navigation */
 
-nav ul {
+/* nav ul {
   list-style: none;
   padding-left: 0;
+} */
+nav {
+  text-align: center;
 }
 
 nav a {
-  display: block;
+  display: inline-block;
   color: #000;
   text-decoration: none;
   padding: .5em;
-  border: 1px solid #000;
+  border: 0px solid #000;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, .9);
 }
 
 nav a:hover,
 nav a:focus,
 nav a:active {
-  color: #000;
-  text-decoration: underline;
-  background-color: #ff0;
+  color: #fff;
+  background-color: #000;
+  text-decoration: none;
 }
 
 nav a:focus,
 nav a:active {
-  color: #00f;
+  color: #000;
 }
 
 
-@media (min-width: 60em) {
+@media (min-width: 30em) {
 
   nav li {
     display: inline;
@@ -37,4 +52,41 @@ nav a:active {
     display: inline-block;
   }
 
+}
+
+/* body */
+body {
+  background-image:
+    url(https://i.kym-cdn.com/photos/images/original/001/416/350/f2d.jpg);
+}
+
+
+/* paragraph tag */
+
+main {
+  max-width: 48rem;
+  background-color: #21491d;
+  padding: 2em;
+  border-radius: 3em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p,
+h3 {
+  color: #dfeef1;
+}
+
+
+/* figure */
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+figcaption {
+  text-align: center;
+  color: #000;
 }
